@@ -11,7 +11,7 @@ characterApp.controller("character_ctrl", ["$scope", "$q", "$http", "$window", /
   };
 
   // todo move this variable in json
-  $scope.xp_default = 6;
+  $scope.xp_default = 8;
 
   $scope.enable_debug = false;
   $scope.sheet_view = {};
