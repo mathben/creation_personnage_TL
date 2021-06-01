@@ -110,7 +110,8 @@ def main(parse_arg):
         # Add ? after ) to make a parameter optional
 
         # Web page
-        tornado.web.url(r"/?", handlers.IndexHandler, name='index', kwargs=settings),
+        # tornado.web.url(r"/?", handlers.IndexHandler, name='index', kwargs=settings),
+        tornado.web.url(r"/?", handlers.CharacterHandler, name='character', kwargs=settings),
         tornado.web.url(r"/login/?", handlers.LoginHandler, name='login', kwargs=settings),
         tornado.web.url(r"/logout/?", handlers.LogoutHandler, name='logout', kwargs=settings),
         tornado.web.url(r"/admin/?", handlers.AdminHandler, name='admin', kwargs=settings),
